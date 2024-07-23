@@ -174,7 +174,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     print("Serving")
-    with gr.Blocks() as demo:
+    with gr.Blocks(title='TTS FINETUNE UI') as demo:
         with gr.Tab("1 - Data processing"):
             out_path = gr.Textbox(
                 label="Output path (where data and checkpoints will be saved):",
