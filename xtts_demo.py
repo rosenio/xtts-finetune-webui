@@ -173,7 +173,7 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-
+    print("Serving")
     with gr.Blocks() as demo:
         with gr.Tab("1 - Data processing"):
             out_path = gr.Textbox(
@@ -689,5 +689,5 @@ if __name__ == "__main__":
         debug=False,
         server_port=args.port,
         # inweb=True,
-        # server_name="localhost"
+        server_name="0.0.0.0"
     )
